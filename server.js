@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Rate calculation endpoint
-app.post('/calculate-rate', (req, res) => {
+app.post('/api/calculate-rate', (req, res) => {
   try {
     const { baseRate, commissionPercentage, promotions } = req.body;
 
